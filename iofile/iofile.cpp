@@ -3,6 +3,8 @@
 #include <iostream>
 using namespace std;
 
+#include <string>
+
 int main() {
 	string baris;
 
@@ -38,7 +40,8 @@ int main() {
 		//melakukan perulangan setiap baris
 		while (getline(infile, baris))
 		{
-
+			//dan tampilkan disini
+			cout << baris << '\n';
 		}
 	}
 }
