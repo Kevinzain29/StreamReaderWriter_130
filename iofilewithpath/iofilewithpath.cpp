@@ -16,6 +16,30 @@ int main() {
 	outfile.open(Namafile, ios::out);
 
 	cout << ">= Menulis file, \'q' untuk keluar" << endl;
-	//jika file ada maka
 	
+	
+	//unlimited loop untuk menulis
+	while (true) {
+		cout << "_ ";
+		//mendapatkan setiap karakter dalam satu baris
+		getline(cin, baris);
+		//loop akan berhenti jika anda memasukkan karakter q
+		if (baris == "q") break;
+		//menulis dan memasukkan nilai dari 'baris' ke dalam file
+		outfile << baris << endl;
+	}
+	//selesai dalam menulis sekarang tutup filenya
+	outfile.close();
+
+	//Membuka file dalam mode membaca
+	ifstream infile;
+	//menunjuk ke sebuah file
+	infile.open(Namafile, ios::in);
+
+	cout << endl << ">= Membuka dan membaca file " << endl;
+	//jika file ada maka
+	if (infile.is_open())
+	{
+		//melakukan perulangan setiap baris
+	}
 }
