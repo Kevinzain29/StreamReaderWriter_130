@@ -9,5 +9,9 @@ int main() {
 	//membuka file file dalam mode menulis
 	ofstream outfile;
 	//menunjuk file ke sebuah nama file
+	outfile.open("contohfile.txt");
 
+	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
+
+	//unlimited loop untuk menulis
 }
