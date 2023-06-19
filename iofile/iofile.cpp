@@ -18,6 +18,8 @@ int main() {
 		cout << "_ ";
 		//mendapatkan setiap karakter dalam satu baris
 		getline(cin, baris);
-		//loop
+		//loop akan berhenti jika anda memasukkan karakter 4
+		if (baris == "q") break;
+		//menulis dan measukkan nilai dari 'baris' ke dalam file
 	}
 }
